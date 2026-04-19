@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RAVANORA TECHNOLOGIES</title>
-<link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+<link rel="icon" type="image/jpeg" href="./assets/images/logo.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,7 +13,12 @@
 <!-- NAVBAR -->
 <nav>
   <div class="nav-logo">
-    <img src="assets/images/logo.jpg" alt="Ravanora Logo" class="nav-logo-img">
+    <img src="./assets/images/logo.jpg" alt="Ravanora Logo" class="nav-logo-img">
+  </div>
+  <div class="menu-toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
   </div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
@@ -31,18 +36,31 @@
   <div class="orb orb-2"></div>
   <div class="hero-bg-text">TECH</div>
 
-  <div class="service-network-container reveal">
-    <div class="network-center">RAVANORA</div>
-    
-    <div class="network-orbit nc-1">
-      <div class="s-node-wrapper"><div class="s-node" style="--ncolor: #06B6D4;"><i>💻</i> WEB</div></div>
-      <div class="s-node-wrapper"><div class="s-node" style="--ncolor: #3B82F6;"><i>📱</i> APP</div></div>
+  <div class="ai-globe-container reveal">
+    <div class="ai-globe">
+      <div class="globe-ring"></div>
+      <div class="globe-ring" style="transform: rotateY(60deg);"></div>
+      <div class="globe-ring" style="transform: rotateY(120deg);"></div>
+      <div class="globe-ring" style="transform: rotateX(90deg);"></div>
+      <div class="globe-center">AI</div>
     </div>
     
-    <div class="network-orbit nc-2">
-      <div class="s-node-wrapper"><div class="s-node" style="--ncolor: #EC4899;"><i>🔍</i> SOCIAL</div></div>
-      <div class="s-node-wrapper"><div class="s-node" style="--ncolor: #7C3AED;"><i>🤖</i> AI</div></div>
-      <div class="s-node-wrapper"><div class="s-node" style="--ncolor: #06B6D4;"><i>✨</i> UI/UX</div></div>
+    <div class="orbit path-1">
+      <div class="orbit-node pos-1"><span>import tensorflow</span></div>
+      <div class="orbit-node pos-2"><span>def learn():</span></div>
+    </div>
+    
+    <div class="orbit path-2">
+      <div class="orbit-node pos-3"><span>import numpy as np</span></div>
+      <div class="orbit-node pos-4"><span>model.fit(X, y)</span></div>
+      <div class="orbit-node pos-5"><span>yield True</span></div>
+    </div>
+
+    <div class="orbit path-3">
+      <div class="orbit-node pos-6"><span>import torch</span></div>
+      <div class="orbit-node pos-7"><span>from transformers</span></div>
+      <div class="orbit-node pos-8"><span>sys.argv</span></div>
+      <div class="orbit-node pos-9"><span>print("AI")</span></div>
     </div>
   </div>
 
